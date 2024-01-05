@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Stack, Image } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 
 const Portfolio = () => {
   const [data, setData] = useState([]);
