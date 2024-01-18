@@ -1,14 +1,15 @@
 import React from "react";
 import { Button, Stack, Image } from "@chakra-ui/react";
+import { Text, Box } from "@chakra-ui/react";
 
 function Presentation() {
   return (
     <section className="containerPresentation" id="containerPresentation">
-      <div className="containerPresentation__info">
+      <Box className="containerPresentation__info">
         <h3>Hola, soy</h3>
-        <h1>Belén </h1>
-        <h1> De Stéfano</h1>
-        <h3>Desarrolladora Web Front End</h3>
+        <Text variant="h1">Belén </Text>
+        <Text variant="h1">De Stéfano </Text>
+        <Text variant="h3">Desarrolladora Web Front End </Text>
 
         <Stack spacing={2} direction="row" align="center" mt={10}>
           <a target="_blank" href="images/CurriculumVitaeBelenDeStefano.pdf">
@@ -49,9 +50,9 @@ function Presentation() {
             </Button>
           </a>
         </Stack>
-      </div>
+      </Box>
 
-      <div className="containerPresentation__mobiles">
+      <Box className="containerPresentation__mobiles">
         <Image
           className="mobile1"
           src="/images/ilserranoMobile.png"
@@ -70,7 +71,7 @@ function Presentation() {
           alt="mobile3"
           boxSize="40%"
         />
-      </div>
+      </Box>
     </section>
   );
 }

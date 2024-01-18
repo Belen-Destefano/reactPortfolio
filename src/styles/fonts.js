@@ -26,10 +26,11 @@ const medium = localFont({
   display: "swap",
 });
 
-export default {
-  black,
-  book,
-  heavy,
-  light,
-  medium,
-};
+export { black, book, heavy, light, medium };
+// export default {
+//   black,
+//   book,
+//   heavy,
+//   light,
+//   medium,
+// };

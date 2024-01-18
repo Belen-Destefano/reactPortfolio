@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Image } from "@chakra-ui/react";
+import { Image, Box, Text, Flex } from "@chakra-ui/react";
 
 const Portfolio = () => {
   const [data, setData] = useState([]);
@@ -17,26 +17,34 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <section id="portfolio" className="portfolioContainer">
-      <h2 className="subtittle">Portfolio</h2>
+    <Box id="portfolio" className="portfolioContainer">
+      <Text variant="h2Center">Portfolio</Text>
       {data.map((proyecto, index) => (
-        <div
+        <Flex
+          flexDirection={{ base: "column", lg: "row" }}
+          alignItems="center"
+          justifyContent="end"
           key={index}
           id={`proyect${data.length - index}`}
           className="portfolioContainer__project"
           style={{ background: background[index % background.length] }}
         >
-          <div className="portfolioContainer__project__text">
-            <h2>{proyecto.titulo}</h2>
-            <h3>{proyecto.subtitulo}</h3>
-            <p>{proyecto.descripcion}</p>
+          <Box
+            w={{ base: "90%", lg: "40%" }}
+            h={"100%"}
+            className="portfolioContainer__project__text"
+          >
+            <Text variant="h2">{proyecto.titulo}</Text>
+            <Text variant="h3">{proyecto.subtitulo}</Text>
+            <Text variant="pVariation">{proyecto.descripcion}</Text>
             <div className="portfolioContainer__project__btn">
               <a target="_blank" href={proyecto.link}>
                 Ver web
               </a>
             </div>
-          </div>
-          <div
+          </Box>
+          <Box
+            w={{ base: "90%", lg: "49%" }}
             className={`portfolioContainer__project__img b${
               data.length - index
             }background`}
@@ -46,10 +54,10 @@ const Portfolio = () => {
               src={proyecto.fondoB}
               alt=""
             />
-          </div>
-        </div>
+          </Box>
+        </Flex>
       ))}
-    </section>
+    </Box>
   );
 };
 

@@ -1,10 +1,16 @@
 import React from "react";
-import { Image } from "@chakra-ui/react";
+import { Image, Box, Flex, Text } from "@chakra-ui/react";
 
 function MainInfo() {
   return (
-    <section id="containerMain" className="containerMain">
-      <div className="containerMain__img">
+    <Flex
+      flexDirection={{ base: "column", lg: "row" }}
+      alignItems="center"
+      justifyContent="center"
+      id="containerMain"
+      className="containerMain"
+    >
+      <Box className="containerMain__img">
         <Image
           id="bodyImg"
           // classname de aca abajo es left y visible NO, lo agregaba con intersection
@@ -12,11 +18,13 @@ function MainInfo() {
           src="images/foto.jpg"
           alt=""
         />
-      </div>
+      </Box>
 
-      <div className="containerMain__info">
-        <h2 className="subtittle">Sobre Mi</h2>
-        <p>
+      <Box className="containerMain__info">
+        <Text variant="h2" className="subtittle">
+          Sobre Mi
+        </Text>
+        <Text variant="p">
           Mi nombre es Belén De Stéfano y soy de Argentina. Me considero una
           apasionada por los códigos y estoy en constante busqueda de nuevos
           retos para continuar aprendiendo. Mi formación en Publicidad reafirmó
@@ -25,9 +33,9 @@ function MainInfo() {
           desafío es convertirme en una excelente profesional Frontend, y asi
           seguir capacitándome con firmeza para hacer crecer todo proyecto que
           se me confíe.
-        </p>
-      </div>
-    </section>
+        </Text>
+      </Box>
+    </Flex>
   );
 }
 
