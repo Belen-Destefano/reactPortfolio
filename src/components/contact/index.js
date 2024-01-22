@@ -5,7 +5,9 @@ function Contact() {
   return (
     <Box id="contact">
       <div className="subtittle--background">
-        <h2 className="subtittle subtittle--background">Contacto</h2>
+        <Text variant={"h2Center"} className="subtittle subtittle--background">
+          Contacto
+        </Text>
       </div>
       <Flex
         flexDirection={"column"}

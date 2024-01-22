@@ -51,6 +51,10 @@ const Text = {
       fontSize: ["16px", "23px", "23px", "17px"],
       ...sharedParagraphStyles,
     },
+    pSmall: {
+      fontSize: ["14px", "21px", "21px", "15px"],
+      ...sharedParagraphStyles,
+    },
   },
 };
 export default Text;

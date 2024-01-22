@@ -9,7 +9,8 @@ function Presentation() {
         <h3>Hola, soy</h3>
         <Text variant="h1">Belén </Text>
         <Text variant="h1">De Stéfano </Text>
-        <Text variant="h3">Desarrolladora Web Front End </Text>
+        <Text variant="h3">Desarrolladora Web </Text>
+        <Text variant="h3">Front End </Text>
 
         <Stack spacing={2} direction="row" align="center" mt={10}>
           <a target="_blank" href="images/CurriculumVitaeBelenDeStefano.pdf">
