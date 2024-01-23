@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
 import { CheckIcon } from "@chakra-ui/icons";
 import {
-  Image,
   Box,
-  Text,
   Flex,
+  Image,
   List,
-  ListItem,
   ListIcon,
+  ListItem,
+  Text,
 } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
+import InViewAnimation from "../inViewAnimation";
 
 const Portfolio = () => {
   const [data, setData] = useState([]);
@@ -29,12 +30,16 @@ const Portfolio = () => {
     <Box id="portfolio" className="portfolioContainer">
       <Text variant="h2Center">Portfolio</Text>
       {data.map((proyecto, index) => (
-        <>
+        <InViewAnimation
+          key={index}
+          effect="opacity"
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        >
           <Flex
             flexDirection={{ base: "column", lg: "row" }}
             alignItems="center"
             justifyContent="end"
-            key={index}
+            // key={index}
             id={`proyect${data.length - index}`}
             className="portfolioContainer__project"
             style={{ background: background[index % background.length] }}
@@ -87,7 +92,7 @@ const Portfolio = () => {
               </Text>
             </Box>
           </Flex>
-        </>
+        </InViewAnimation>
       ))}
     </Box>
   );

@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, Stack, Image } from "@chakra-ui/react";
+import { Button, Image, Stack } from "@chakra-ui/react";
 
 function Navbar() {
   return (

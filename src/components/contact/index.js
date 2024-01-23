@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, Stack, Flex, Box, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Stack, Text } from "@chakra-ui/react";
 
 function Contact() {
   return (

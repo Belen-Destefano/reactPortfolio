@@ -1,5 +1,6 @@
-import React from "react";
-import { Image, Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import InViewAnimation from "../inViewAnimation";
 
 function MainInfo() {
   return (
@@ -10,20 +11,26 @@ function MainInfo() {
       id="containerMain"
       className="containerMain"
     >
-      <Box className="containerMain__img">
-        <Image
-          id="bodyImg"
-          // classname de aca abajo es left y visible NO, lo agregaba con intersection
-          className="body__img visible"
-          src="images/foto.jpg"
-          alt=""
-        />
-      </Box>
+      <InViewAnimation
+        effect="fadeInLeft"
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+      >
+        <Box className="containerMain__img">
+          <Image
+            id="bodyImg"
+            // classname de aca abajo es left y visible NO, lo agregaba con intersection
+            className="body__img visible"
+            src="images/foto.jpg"
+            alt=""
+          />
+        </Box>
+      </InViewAnimation>
 
       <Box className="containerMain__info">
         <Text variant="h2" className="subtittle">
           Sobre Mi
         </Text>
+
         <Text variant="p">
           Mi nombre es Belén De Stéfano y soy de Argentina. Me considero una
           apasionada por los códigos y estoy en constante busqueda de nuevos

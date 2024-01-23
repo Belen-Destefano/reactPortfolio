@@ -1,5 +1,4 @@
-import React from "react";
-import { Image, Stack, Wrap, WrapItem } from "@chakra-ui/react";
+import { Image, Wrap, WrapItem } from "@chakra-ui/react";
 
 function Icons() {
   return (
@@ -11,6 +10,7 @@ function Icons() {
           alt="icon"
         />
       </WrapItem>
+
       <WrapItem>
         <Image
           className="containerDevicons__icon"
@@ -67,6 +67,7 @@ function Icons() {
           alt="icon"
         />
       </WrapItem>
+
       <WrapItem>
         <Image
           className="containerDevicons__icon"

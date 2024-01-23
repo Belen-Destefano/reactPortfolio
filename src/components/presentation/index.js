@@ -1,6 +1,4 @@
-import React from "react";
-import { Button, Stack, Image } from "@chakra-ui/react";
-import { Text, Box } from "@chakra-ui/react";
+import { Box, Button, Image, Stack, Text } from "@chakra-ui/react";
 
 function Presentation() {
   return (
