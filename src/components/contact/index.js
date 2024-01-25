@@ -87,13 +87,20 @@ function Contact() {
           belen.destefano@gmail.com
         </Text>
         <Text variant="p" className="myproject">
-          En cuanto a la creación de este portfolio, utilicé HTML, CSS,
-          Javascript y Sass, lo cual me permitio trabajar con variables y
-          funciones como each para crear clases de manera más dinámica. Además,
-          los proyectos se encuentran en un archivo JSON, que es consumido a
-          través de fetch. Para lograr la aparición de los proyectos de acuerdo
-          al scroll, utilicé Intersection Observer, consiguiendo una carga más
-          fluida y una experiencia de usuario más atractiva.
+          En cuanto a la creación de este portfolio, elegí Next.js junto con
+          HTML, CSS y React JS, aprovechando la estructura modular mediante la
+          componetización. Para la implementación de estilos utilice Chakra UI,
+          que me facilitó con sus componentes preestablecidos y propiedades la
+          aplicacion de estilos, agilizando la creación de una interfaz
+          atractiva y responsive ademas de mantener el CSS lo más conciso
+          posible. La información sobre mis proyectos está almacenada en un
+          archivo JSON y es recuperada mediante la función fetch, permitiendo
+          una gestión dinámica de los datos. Además, para mejorar la experiencia
+          de usuario, implementé animaciones y transiciones utilizando CSS,
+          asegurándome de que fueran coherentes con la identidad visual del
+          proyecto. También, integré la librería Framer Motion para gestionar
+          específicamente las apariciones de proyectos y otros elementos en
+          respuesta al desplazamiento de la página.
         </Text>
       </Flex>
     </Box>

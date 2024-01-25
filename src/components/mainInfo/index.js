@@ -36,10 +36,9 @@ function MainInfo() {
           apasionada por los códigos y estoy en constante busqueda de nuevos
           retos para continuar aprendiendo. Mi formación en Publicidad reafirmó
           la creatividad con la que siempre me identifiqué, y la utilizo con
-          determinación para transformar en posible lo que aparenta no serlo. Mi
-          desafío es convertirme en una excelente profesional Frontend, y asi
-          seguir capacitándome con firmeza para hacer crecer todo proyecto que
-          se me confíe.
+          determinación en cada aspecto de mi vida. Mi desafío es convertirme en
+          una excelente profesional Frontend, y asi seguir capacitándome con
+          firmeza para hacer crecer todo proyecto que se me confíe.
         </Text>
       </Box>
     </Flex>
