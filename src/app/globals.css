@@ -23,16 +23,6 @@ html.lenis {
   Margin: 0;
   padding: 0; }
 
-h1 {
-  text-align: left;
-  font-size: 4em;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  background-image: linear-gradient(-225deg, #d3d5d5, #a7aaaf 29%, #a9d1e6 67%, #c9cfd4);
-  letter-spacing: -4px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent; }
 
 body {
   background: radial-gradient(circle, #c3b6b6 0%, #1d1d1d 100%); }
@@ -192,19 +182,19 @@ body {
         body #contact .contactFlex .contactContainer a {
           margin: 2px; }
       body #contact .contactFlex .mail {
-        text-align: center;
-        font-size: 24px; }
+        /* font-size: 24px;  */
+        text-align: center;}
       body #contact .contactFlex .myproject {
         padding: 3%;
         font-weight: 100;
-        font-size: 18px;
+        /* font-size: 18px; */
         text-align: center; }
 
 /*RESPONSIVE*/
 @media only screen and (min-width: 1365px) and (max-width: 2500px) {
-  h1 {
+  /* h1 {
     text-align: left;
-    font-size: 5em; }
+    font-size: 5em; } */
   body .portfolioContainer .portfolioContainer__project .portfolioContainer__project__img--trait:hover {
     transform: rotate(3deg); }
   body .portfolioContainer .portfolioContainer__project .portfolioContainer__project__img .portfolioContainer__project__img--trait {
@@ -236,16 +226,10 @@ body {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1300px) {
-  p {
-    font-size: 16px; }
-  .myproject {
-    font-size: 15px !important; }
   body .containerPresentation .containerPresentation__info {
     margin-left: 7em; }
   body .containerPresentation .containerPresentation__mobiles {
     width: 50%; }
-  h1 {
-    font-size: 4em; }
  
   @keyframes animationMobile {
     0% {
@@ -259,12 +243,7 @@ body {
   }
 
 @media only screen and (max-width: 992px) {
-  p {
-    font-size: 23px;
-    color: whitesmoke;
-    font-weight: 100; }
-  .myproject {
-    font-size: 22px !important; }
+
   body header {
     display: flex;
     flex-direction: row;
@@ -295,7 +274,7 @@ body {
   body .containerPresentation {
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: auto;
     padding-bottom: 100px; }
     body .containerPresentation .containerPresentation__info {
@@ -335,7 +314,7 @@ body {
     width: 100%;
     height: 60em; }
     body main .containerMain {
-      height: 100%;}
+      height: auto;}
       body main .containerMain .containerMain__img {
         margin-bottom: 5%;
         margin-top: 7%; }
@@ -357,22 +336,34 @@ body {
     body .portfolioContainer .portfolioContainer__project .portfolioContainer__project__img {
       background: none; }
       body .portfolioContainer .portfolioContainer__project .portfolioContainer__project__img .portfolioContainer__project__img--trait {
-        padding: 4% 0% 1%; } }
+        padding: 4% 0% 1%; } 
+      #contact {
+        height: auto !important;
+    }
+    body #contact .contactFlex .myproject {
+      margin: 2em 1em 8em 1em;
+  }
+  #iconsContact{
+    margin: 6%;
+  }
+    }
 
- 
-
+@media only screen and (max-width: 830px) {
+  body .containerPresentation {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 100px; }
+}
 
 @media only screen and (max-width: 500px) {
-  h1 {
-    font-size: 5em; }
-  h3 {
-    font-size: 28px; }
   body header .containerHeader {
     bottom: 3em; }
   body .containerPresentation .containerPresentation__info {
     width: max-content; }
   body .containerPresentation .containerPresentation__mobiles img {
-    width: 7em;
+    width: 6em;
     height: auto; }
   body .containerPresentation .containerPresentation__mobiles .mobile1:hover {
     transform: translate(10px, -60px) scale(0.9); }
@@ -388,22 +379,9 @@ body {
     body main .containerDevicons .containerDevicons__icon {
       z-index: 3;
       width: 4em; }
-    body .portfolioContainer .portfolioContainer__project .portfolioContainer__project__text h2 {
-      font-size: 30px; }
-
     }
 
 @media only screen and (max-width: 360px) {
-  h3 {
-    font-size: 24px; }
-  p {
-    font-size: 16px;
-    color: whitesmoke;
-    font-weight: 100; }
-  .myproject {
-    font-size: 16px !important; }
-  body h1 {
-    font-size: 4em; }
     body .containerPresentation {
 
       padding-bottom: 46px;
@@ -411,7 +389,7 @@ body {
   body .containerPresentation .containerPresentation__info {
     margin: 2em; }
   body .containerPresentation .containerPresentation__mobiles img {
-    width: 5em;
+    width: 6em;
   height: auto; }
   .mobile3 {
     transition: all 1s;

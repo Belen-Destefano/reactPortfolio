@@ -9,7 +9,7 @@ const animation = {
     visible: { opacity: 1, y: 0 },
   },
   fadeInLeft: {
-    hidden: { opacity: 0, x: -300 },
+    hidden: { opacity: 0, x: -200 },
     visible: { opacity: 1, x: 0 },
   },
   fadeInDown: {

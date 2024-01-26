@@ -39,7 +39,6 @@ const Portfolio = () => {
             flexDirection={{ base: "column", lg: "row" }}
             alignItems="center"
             justifyContent="end"
-            // key={index}
             id={`proyect${data.length - index}`}
             className="portfolioContainer__project"
             style={{ background: background[index % background.length] }}
@@ -63,9 +62,6 @@ const Portfolio = () => {
               w={{ base: "90%", lg: "49%" }}
               h={"100%"}
               className="portfolioContainer__project__img"
-              // className={`portfolioContainer__project__img b${
-              //   data.length - index
-              // }background`}
             >
               <a target="_blank" href={proyecto.link}>
                 <Image
@@ -81,9 +77,10 @@ const Portfolio = () => {
                   flexWrap="wrap"
                   align="flex-start"
                   mt="3%"
+                  mb="3%"
                 >
                   {proyecto.tecnologias.split(", ").map((tecnologia, index) => (
-                    <ListItem key={index} mt={1} mr={2}>
+                    <ListItem key={index} mt={1} mb={1} mr={2}>
                       <ListIcon as={CheckIcon} color="green.500" />
                       {tecnologia}
                     </ListItem>

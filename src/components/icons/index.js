@@ -2,7 +2,12 @@ import { Image, Wrap, WrapItem } from "@chakra-ui/react";
 
 function Icons() {
   return (
-    <Wrap className="containerDevicons" justify={"center"} align={"center"}>
+    <Wrap
+      className="containerDevicons"
+      justify={"center"}
+      align={"center"}
+      m="2em"
+    >
       <WrapItem>
         <Image
           className="containerDevicons__icon"

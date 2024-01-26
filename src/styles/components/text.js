@@ -21,8 +21,9 @@ const Text = {
       fontFamily: "default-light",
     },
     h1: {
-      fontSize: ["4.5em", "5em", "4em", "4.5em"],
-      lineHeight: "110px",
+      fontSize: ["60px", "75px", "72px", "72px"],
+      // fontSize: ["4.5em", "5em", "4em", "4.5em"],
+      lineHeight: ["75px", null, null, "90px"],
       fontFamily: "default-medium",
       backgroundImage:
         "linear-gradient(-225deg, #d3d5d5, #a7aaaf 29%, #a9d1e6 67%, #c9cfd4)",
@@ -43,16 +44,16 @@ const Text = {
       ...sharedParagraphStyles,
     },
     p: {
-      fontSize: ["17px", "23px", "23px", "23px"],
+      fontSize: ["16px", "20px", "23px", "23px"],
       fontFamily: "default-light",
       color: "whitesmoke",
     },
     pVariation: {
-      fontSize: ["16px", "23px", "23px", "17px"],
+      fontSize: ["16px", "20px", "23px", "17px"],
       ...sharedParagraphStyles,
     },
     pSmall: {
-      fontSize: ["14px", "21px", "21px", "15px"],
+      fontSize: ["14px", "20px", "21px", "15px"],
       ...sharedParagraphStyles,
     },
   },

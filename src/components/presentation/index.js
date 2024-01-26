@@ -4,7 +4,7 @@ function Presentation() {
   return (
     <section className="containerPresentation" id="containerPresentation">
       <Box className="containerPresentation__info">
-        <h3>Hola, soy</h3>
+        <Text variant="h3">Hola, soy </Text>
         <Text variant="h1">Belén </Text>
         <Text variant="h1">De Stéfano </Text>
         <Text variant="h3">Desarrolladora Web </Text>

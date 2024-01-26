@@ -16,7 +16,13 @@ function Contact() {
         id="contact"
         className="contactFlex"
       >
-        <Stack spacing={2} direction={"row"} align="center" mt={5}>
+        <Stack
+          spacing={2}
+          direction={"row"}
+          align="center"
+          mt={5}
+          id="iconsContact"
+        >
           <a
             target="_blank"
             href="https://www.linkedin.com/in/belen-de-stefano/"
