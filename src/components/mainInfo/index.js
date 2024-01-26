@@ -1,5 +1,4 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import InViewAnimation from "../inViewAnimation";
 
 function MainInfo() {
@@ -18,7 +17,6 @@ function MainInfo() {
         <Box className="containerMain__img">
           <Image
             id="bodyImg"
-            // classname de aca abajo es left y visible NO, lo agregaba con intersection
             className="body__img visible"
             src="images/foto.jpg"
             alt=""

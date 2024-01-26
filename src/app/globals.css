@@ -166,7 +166,7 @@ body {
         body .portfolioContainer .portfolioContainer__project .portfolioContainer__project__img .portfolioContainer__project__img--trait {
           border-radius: 4px;
           transition: all 0.5s;
-          padding: 1% 4%; }
+          padding: 5% 3%; }
       body .portfolioContainer .portfolioContainer__project .portfolioContainer__project__img--trait:hover {
         transform: rotate(3deg);
        }
@@ -400,8 +400,8 @@ body {
   body .containerPresentation .containerPresentation__mobiles .mobile3:hover {
     transform: translate(0px, -80px) scale(0.9); }
   body .portfolioContainer .portfolioContainer__project .portfolioContainer__project__img .portfolioContainer__project__img--trait {
-    height: 144px;
-    margin: 10% 4%; }
+    height: 160px;
+    margin: 8% 0%; }
   body .portfolioContainer .portfolioContainer__project .tecnoFondo-image {
     background-size: 25em; }
   body .portfolioContainer .portfolioContainer__project .selvageFondo-image {
