@@ -4,7 +4,7 @@ const sharedParagraphStyles = {
 };
 
 const sharedH2Styles = {
-  fontSize: ["2em", "3em"],
+  fontSize: ["30px", "35px", "45px"],
   fontFamily: "default-light",
   letterSpacing: [null, null, "-2px"],
   color: "whitesmoke",
@@ -23,7 +23,7 @@ const Text = {
     h1: {
       fontSize: ["55px", "75px", "72px", "72px"],
       // fontSize: ["4.5em", "5em", "4em", "4.5em"],
-      lineHeight: ["65px", null, null, "90px"],
+      lineHeight: ["70px", null, null, "90px"],
       fontFamily: "default-medium",
       backgroundImage:
         "linear-gradient(-225deg, #d3d5d5, #a7aaaf 29%, #a9d1e6 67%, #c9cfd4)",
@@ -40,20 +40,20 @@ const Text = {
       textAlign: "center",
     },
     h3: {
-      fontSize: ["1.2em", "1.5em", "2em", "2em"],
+      fontSize: ["20px", "25px", "30px", "30px"],
       ...sharedParagraphStyles,
     },
     p: {
-      fontSize: ["14px", "20px", "23px", "23px"],
+      fontSize: ["14px", "18px", "23px", "23px"],
       fontFamily: "default-light",
       color: "whitesmoke",
     },
     pVariation: {
-      fontSize: ["14px", "20px", "23px", "17px"],
+      fontSize: ["14px", "18px", "23px", "17px"],
       ...sharedParagraphStyles,
     },
     pSmall: {
-      fontSize: ["12px", "20px", "21px", "15px"],
+      fontSize: ["12px", "18px", "21px", "15px"],
       ...sharedParagraphStyles,
     },
   },

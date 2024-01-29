@@ -8,10 +8,11 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import InViewAnimation from "../inViewAnimation";
 
-const Portfolio = () => {
+const Projects = () => {
   const [data, setData] = useState([]);
   const background = [
     "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(150,88,78,1) 73%)",
@@ -52,24 +53,47 @@ const Portfolio = () => {
 
               <Text variant="pVariation">{proyecto.descripcion}</Text>
 
-              <div className="portfolioContainer__project__btn">
-                <a target="_blank" href={proyecto.link}>
+              <Box
+                className="portfolioContainer__project__btn"
+                bg="whitesmoke"
+                border="1px solid whitesmoke"
+                borderRadius="5px"
+                padding="11px"
+                textAlign="center"
+                display="inline-block"
+                transition="all 0.1s ease-in"
+                margin="30px 0px"
+                _hover={{
+                  bg: "#f5f5f500",
+                  border: "1px solid white",
+                  "& a": {
+                    color: "white",
+                  },
+                }}
+              >
+                <Link
+                  target="_blank"
+                  href={proyecto.link}
+                  color="#1f282d"
+                  textDecoration="none"
+                  textTransform="uppercase"
+                >
                   Ver web
-                </a>
-              </div>
+                </Link>
+              </Box>
             </Box>
             <Box
               w={{ base: "90%", lg: "49%" }}
               h={"100%"}
               className="portfolioContainer__project__img"
             >
-              <a target="_blank" href={proyecto.link}>
+              <Link target="_blank" href={proyecto.link}>
                 <Image
                   className="portfolioContainer__project__img--trait"
                   src={proyecto.fondoB}
                   alt=""
                 />
-              </a>
+              </Link>
               <Text variant="pSmall">
                 <List
                   spacing={1}
@@ -95,4 +119,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

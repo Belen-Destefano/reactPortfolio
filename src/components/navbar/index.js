@@ -1,12 +1,13 @@
 import { Button, Image, Stack } from "@chakra-ui/react";
+import Link from "next/link";
 
 function Navbar() {
   return (
     <header>
       <nav className="containerHeader">
-        <a href="#containerPresentation" className="firma">
+        <Link href="/" className="firma">
           <Image src="/images/firma.png" alt="firma" />
-        </a>
+        </Link>
 
         <Stack
           spacing={2}
@@ -14,7 +15,7 @@ function Navbar() {
           align="center"
           mt={{ base: "0", lg: "5" }}
         >
-          <a href="#containerPresentation">
+          <Link href="#containerPresentation">
             <Button
               color="white"
               borderColor="white"
@@ -40,9 +41,9 @@ function Navbar() {
                 ></path>
               </svg>
             </Button>
-          </a>
+          </Link>
 
-          <a href="#containerMain">
+          <Link href="#containerMain">
             <Button
               color="white"
               borderColor="white"
@@ -62,8 +63,8 @@ function Navbar() {
                 <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" />
               </svg>
             </Button>
-          </a>
-          <a href="#portfolio">
+          </Link>
+          <Link href="#portfolio">
             <Button
               color="white"
               borderColor="white"
@@ -82,8 +83,8 @@ function Navbar() {
                 <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
               </svg>
             </Button>
-          </a>
-          <a href="#contact">
+          </Link>
+          <Link href="#contact">
             <Button
               color="white"
               borderColor="white"
@@ -103,7 +104,7 @@ function Navbar() {
                 <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
               </svg>
             </Button>
-          </a>
+          </Link>
         </Stack>
       </nav>
     </header>

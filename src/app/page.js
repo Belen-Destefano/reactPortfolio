@@ -5,7 +5,7 @@ import Icons from "@/components/icons/index";
 import MainInfo from "@/components/mainInfo/index";
 import Navbar from "@/components/navbar/index";
 import Presentation from "@/components/presentation/index";
-import Portfolio from "@/components/projects/index";
+import Projects from "@/components/projects/index";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <Presentation />
       <MainInfo />
       <Icons />
-      <Portfolio />
+      <Projects />
       <Contact />
     </main>
   );
