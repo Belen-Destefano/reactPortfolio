@@ -21,7 +21,7 @@ const Text = {
       fontFamily: "default-light",
     },
     h1: {
-      fontSize: ["55px", "75px", "72px", "72px"],
+      fontSize: ["55px", "60px", "72px", "72px"],
       // fontSize: ["4.5em", "5em", "4em", "4.5em"],
       lineHeight: ["70px", null, null, "90px"],
       fontFamily: "default-medium",
@@ -44,7 +44,7 @@ const Text = {
       ...sharedParagraphStyles,
     },
     p: {
-      fontSize: ["14px", "18px", "23px", "23px"],
+      fontSize: ["14px", "18px", "23px", "20px"],
       fontFamily: "default-light",
       color: "whitesmoke",
     },
@@ -53,7 +53,7 @@ const Text = {
       ...sharedParagraphStyles,
     },
     pSmall: {
-      fontSize: ["12px", "18px", "21px", "15px"],
+      fontSize: ["12px", "15px", "21px", "15px"],
       ...sharedParagraphStyles,
     },
   },

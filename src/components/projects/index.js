@@ -31,28 +31,30 @@ const Projects = () => {
     <Box id="portfolio" className="portfolioContainer">
       <Text variant="h2Center">Portfolio</Text>
       {data.map((proyecto, index) => (
-        <InViewAnimation
+        <Flex
           key={index}
-          effect="opacity"
-          transition={{ duration: 0.6, ease: "easeInOut" }}
+          flexDirection={{ base: "column", lg: "row" }}
+          alignItems="center"
+          justifyContent="end"
+          id={`proyect${data.length - index}`}
+          className="portfolioContainer__project"
+          style={{ background: background[index % background.length] }}
         >
-          <Flex
-            flexDirection={{ base: "column", lg: "row" }}
-            alignItems="center"
-            justifyContent="end"
-            id={`proyect${data.length - index}`}
-            className="portfolioContainer__project"
-            style={{ background: background[index % background.length] }}
+          <Box
+            w={{ base: "90%", lg: "40%" }}
+            className="portfolioContainer__project__text"
           >
-            <Box
-              w={{ base: "90%", lg: "40%" }}
-              className="portfolioContainer__project__text"
-            >
+            <InViewAnimation transition={{ duration: 0.4 }}>
               <Text variant="h2">{proyecto.titulo}</Text>
+            </InViewAnimation>
+            <InViewAnimation transition={{ duration: 0.5 }}>
               <Text variant="h3">{proyecto.subtitulo}</Text>
-
+            </InViewAnimation>
+            <InViewAnimation transition={{ duration: 0.6 }}>
               <Text variant="pVariation">{proyecto.descripcion}</Text>
+            </InViewAnimation>
 
+            <InViewAnimation transition={{ duration: 0.6 }} margin="10%">
               <Box
                 className="portfolioContainer__project__btn"
                 bg="whitesmoke"
@@ -81,11 +83,18 @@ const Projects = () => {
                   Ver web
                 </Link>
               </Box>
-            </Box>
-            <Box
-              w={{ base: "90%", lg: "49%" }}
-              h={"100%"}
-              className="portfolioContainer__project__img"
+            </InViewAnimation>
+          </Box>
+          <Box
+            w={{ base: "90%", lg: "49%" }}
+            h={"100%"}
+            className="portfolioContainer__project__img"
+          >
+            {" "}
+            <InViewAnimation
+              effect="opacity"
+              transition={{ duration: 0.7 }}
+              margin="-25%"
             >
               <Link target="_blank" href={proyecto.link}>
                 <Image
@@ -111,9 +120,9 @@ const Projects = () => {
                   ))}
                 </List>
               </Text>
-            </Box>
-          </Flex>
-        </InViewAnimation>
+            </InViewAnimation>
+          </Box>
+        </Flex>
       ))}
     </Box>
   );
