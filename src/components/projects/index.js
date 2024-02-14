@@ -51,7 +51,12 @@ const Projects = () => {
               <Text variant="h3">{proyecto.subtitulo}</Text>
             </InViewAnimation>
             <InViewAnimation transition={{ duration: 0.6 }}>
-              <Text variant="pVariation">{proyecto.descripcion}</Text>
+              <Text
+                variant="pVariation"
+                textAlign={{ base: "justify", lg: "start" }}
+              >
+                {proyecto.descripcion}
+              </Text>
             </InViewAnimation>
 
             <InViewAnimation transition={{ duration: 0.6 }} margin="10%">

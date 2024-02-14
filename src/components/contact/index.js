@@ -112,20 +112,19 @@ function Contact() {
           transition={{ duration: 3 }}
           effect="opacity"
           margin="-25%"
+          style={{ width: "90%", margin: "6% 0%", paddingBottom: "15%" }}
         >
           <Text variant="p" className="myproject">
-            Para la creación de este portfolio, elegí Next.js aprovenchando su
-            estructura modular mediante la componentización. En cuanto a a la
-            apariencia visual, utilice Chakra UI que me facilitó con sus
-            componentes preestablecidos y propiedades la aplicacion de estilos,
-            agilizando la creación de una interfaz atractiva y responsive ademas
-            de mantener el CSS lo más conciso posible. La información sobre mis
-            proyectos está almacenada en un archivo JSON y es recuperada
-            mediante la función fetch, permitiendo una gestión dinámica de los
-            datos. Además, para mejorar la experiencia de usuario, implementé
-            animaciones y transiciones mediante CSS e integré la librería Framer
-            Motion para gestionar específicamente las apariciones de proyectos y
-            otros elementos en respuesta al desplazamiento de la página.
+            Para la creación de este portfolio, elegí Next basado en React.js,
+            aprovenchando su estructura modular mediante la componentización. En
+            cuanto a a la apariencia visual, utilice Chakra UI que me facilitó
+            con sus componentes preestablecidos y propiedades la aplicacion de
+            estilos. La información sobre mis proyectos está almacenada en un
+            archivo JSON y es recuperada mediante la función fetch. Además, para
+            mejorar la experiencia de usuario, implementé animaciones y
+            transiciones mediante CSS e integré la librería Framer Motion para
+            gestionar específicamente las apariciones de proyectos y otros
+            elementos en respuesta al desplazamiento de la página.
           </Text>
         </InViewAnimation>
       </Flex>

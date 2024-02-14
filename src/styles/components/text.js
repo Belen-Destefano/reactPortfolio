@@ -41,6 +41,7 @@ const Text = {
     },
     h3: {
       fontSize: ["20px", "25px", "30px", "30px"],
+
       ...sharedParagraphStyles,
     },
     p: {

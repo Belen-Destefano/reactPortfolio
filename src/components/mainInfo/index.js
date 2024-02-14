@@ -34,19 +34,20 @@ function MainInfo() {
 
         <Box className="containerMain__info">
           <InViewAnimation transition={{ duration: 1.0 }} effect="opacity">
-            <Text variant="h2" className="subtittle">
+            <Text variant="h2" className="subtittle" textAlign="center">
               Sobre Mi
             </Text>
 
-            <Text variant="p">
-              Mi nombre es Belén De Stéfano y soy de Argentina. Me considero una
-              apasionada por los códigos y estoy en constante busqueda de nuevos
-              retos para continuar aprendiendo. Mi formación en Publicidad
-              reafirmó la creatividad con la que siempre me identifiqué, y la
-              utilizo con determinación en cada aspecto de mi vida. Mi desafío
-              es convertirme en una excelente profesional Frontend, y asi seguir
-              capacitándome con firmeza para hacer crecer todo proyecto que se
-              me confíe.
+            <Text variant="p" textAlign={{ base: "justify", lg: "center" }}>
+              Mi nombre es Belén De Stéfano y soy de Argentina. Aspiro a
+              destacar como profesional junior, comprometiendome con la
+              resolución de desafíos y el aprendizaje continuo en cada proyecto.
+              Además, busco complementar mi formación en Frontend con la
+              perspectiva creativa que obtuve de mis estudios en Publicidad.
+              Estoy en constante búsqueda de nuevos retos con el fin de
+              continuar aprendiendo. Mi meta es convertirme en una excelente
+              profesional Frontend, con el propósito de seguir capacitándome con
+              firmeza para hacer crecer todo proyecto que se me confíe.
             </Text>
           </InViewAnimation>
         </Box>

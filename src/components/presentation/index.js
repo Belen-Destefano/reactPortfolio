@@ -15,7 +15,9 @@ function Presentation() {
     >
       <Box className="containerPresentation__info">
         <InViewAnimation transition={{ duration: 0.4 }}>
-          <Text variant="h3">Hola, soy </Text>
+          <Text variant="h3" ml={"1%"}>
+            Hola, soy{" "}
+          </Text>
         </InViewAnimation>
         <InViewAnimation transition={{ duration: 0.7 }}>
           {/* <Text variant="h1">Belén De Stéfano</Text> */}
@@ -25,11 +27,13 @@ function Presentation() {
           </Text>
         </InViewAnimation>
         <InViewAnimation transition={{ duration: 1.0 }}>
-          <Text variant="h3">Desarrolladora Front End </Text>
+          <Text variant="h3" ml={"1%"}>
+            Desarrolladora Front End{" "}
+          </Text>
         </InViewAnimation>
 
         <InViewAnimation transition={{ duration: 1.5 }} margin="-5%">
-          <Stack spacing={2} direction="row" align="center" mt={10}>
+          <Stack spacing={2} direction="row" align="center" mt={10} ml={"1%"}>
             <Link
               target="_blank"
               href="images/CurriculumVitaeBelenDeStefano.pdf"
