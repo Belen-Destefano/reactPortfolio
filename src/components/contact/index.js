@@ -112,9 +112,13 @@ function Contact() {
           transition={{ duration: 3 }}
           effect="opacity"
           margin="-25%"
-          style={{ width: "90%", margin: "6% 0%", paddingBottom: "15%" }}
+          style={{ width: "90%", margin: "6% 0%" }}
         >
-          <Text variant="p" className="myproject">
+          <Text
+            variant="p"
+            className="myproject"
+            paddingBottom={{ base: "50%", lg: "1%" }}
+          >
             Para la creación de este portfolio, elegí Next basado en React.js,
             aprovenchando su estructura modular mediante la componentización. En
             cuanto a a la apariencia visual, utilice Chakra UI que me facilitó

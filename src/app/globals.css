@@ -317,7 +317,7 @@ body {
   body .containerPresentation .containerPresentation__mobiles .mobile3:hover {
     transform: translate(0px, -80px) scale(0.9); }
   body .portfolioContainer .portfolioContainer__project .portfolioContainer__project__img .portfolioContainer__project__img--trait {
-    height: 160px;
+    /* height: 160px; */
     margin: 8% 0%; }
   body .portfolioContainer .portfolioContainer__project .tecnoFondo-image {
     background-size: 25em; }
