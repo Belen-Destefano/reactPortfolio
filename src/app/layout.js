@@ -4,7 +4,6 @@ import Fonts from "@/styles/fonts";
 import "./globals.css";
 
 export const metadata = {
-  metadataBase: new URL("https://americanchip.io"),
   title: "Belen De Stéfano. Portfolio Frontend",
   description:
     "Dentro de mi portfolio encontrarás algunos de los proyectos que he realizado hasta el momento mientras sigo en constante búsqueda y aprendizaje, explorando nuevas oportunidades y mejorando mis habilidades.",
@@ -14,10 +13,10 @@ export const metadata = {
   openGraph: {
     title: "Belen De Stéfano. Portfolio Frontend",
     description:
-      "Dentro de mi portfolio encontrarás algunos de los proyectos que he realizado hasta el momento mientras sigo en constante búsqueda y aprendizaje, explorando nuevas oportunidades y mejorando mis habilidades.",
+      "Dentro de mi portfolio se encuentran algunos de los proyectos que realicé hasta el momento mientras sigo en constante búsqueda y aprendizaje, explorando nuevas oportunidades y mejorando mis habilidades.",
     images: [
       {
-        url: "/images/portfolio_OG.jpg",
+        url: "/images/aportfolio_OG.jpg",
         width: 1200,
         height: 630,
         alt: "Belen De Stéfano. Portfolio Frontend",

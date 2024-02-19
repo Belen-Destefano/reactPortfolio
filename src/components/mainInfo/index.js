@@ -40,14 +40,14 @@ function MainInfo() {
 
             <Text variant="p" textAlign={{ base: "justify", lg: "center" }}>
               Mi nombre es Belén De Stéfano y soy de Argentina. Aspiro a
-              destacar como profesional junior, comprometiendome con la
-              resolución de desafíos y el aprendizaje continuo en cada proyecto.
-              Además, busco complementar mi formación en Frontend con la
-              perspectiva creativa que obtuve de mis estudios en Publicidad.
-              Estoy en constante búsqueda de nuevos retos con el fin de
-              continuar aprendiendo. Mi meta es convertirme en una excelente
-              profesional Frontend, con el propósito de seguir capacitándome con
-              firmeza para hacer crecer todo proyecto que se me confíe.
+              destacar como profesional, comprometiendome con la resolución de
+              desafíos, el aprendizaje continuo en cada proyecto y
+              complementando mi formación en Frontend con la perspectiva
+              creativa que obtuve de mis estudios en Publicidad. Estoy en
+              constante búsqueda de nuevos retos con el fin de continuar
+              aprendiendo. Mi meta es convertirme en una excelente profesional
+              Frontend, con el propósito de seguir capacitándome con firmeza
+              para hacer crecer todo proyecto que se me confíe.
             </Text>
           </InViewAnimation>
         </Box>
